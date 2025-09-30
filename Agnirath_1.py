@@ -10,7 +10,7 @@ def finding_steady_state_temp(Ta, Torque):
         i = 0.561 * B*  Torque                              
         R = 0.0575 * (1 + 0.0039 * (Tw - 293))              
         Pc = 3*i**2*R                                       
-        Pe = ( 9.602 * pow(10,-6) * (B*Torque)**2 )/ R      gay
+        Pe = ( 9.602 * pow(10,-6) * (B*Torque)**2 )/ R      
         Tw = 0.455 * (Pc + Pe) + Ta                         
         
     return round(Tw,1)                                      #Returing the rounded Tw value   
